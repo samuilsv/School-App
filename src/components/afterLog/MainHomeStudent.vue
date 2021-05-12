@@ -1,7 +1,8 @@
 <template>
   <div class="home">
-    <ChoiseClass />
     <div class="container">
+      <ChoiseClass />
+
       <div class="home__title">Цікаві завдання</div>
       <div class="home__body">
         <div class="book">
