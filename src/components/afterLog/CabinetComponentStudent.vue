@@ -70,9 +70,7 @@
 </template>
 
 <script>
-export default {
-  
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>
@@ -124,6 +122,19 @@ export default {
     line-height: 20px;
 
     padding: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  & input::after {
+    position: absolute;
+    content: "";
+    z-index: 2;
+    margin-left: -7px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #002202;
   }
   &__filter {
     max-width: 540px;
@@ -132,6 +143,7 @@ export default {
     justify-content: space-between;
 
     margin-top: 37px;
+    margin-bottom: 24px;
   }
   &__filter p {
     font-weight: 500;
